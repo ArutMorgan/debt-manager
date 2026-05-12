@@ -56,7 +56,7 @@ Future<void> _saveDebts() async {
     final debt = _debts[idx];
     setState(() {
       _debts.removeAt(idx);
-      _deletedMessage = '«${debt.creditor}» удалён';
+      _deletedMessage = 'Долг «${debt.creditor}» удалён';
       _deleteCountdown = 5;
     });
     _saveDebts();
